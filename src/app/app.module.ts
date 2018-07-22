@@ -7,6 +7,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { DatabasesComponent } from './components/databases/databases.component';
+import { LanguagesComponent } from './components/languages/languages.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DatabasesComponent } from './components/databases/databases.component';
     AboutComponent,
     ExperienceComponent,
     EducationComponent,
-    DatabasesComponent
+    DatabasesComponent,
+    LanguagesComponent
   ],
   imports: [
     BrowserModule
