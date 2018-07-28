@@ -12,6 +12,9 @@ import { EducationComponent } from './components/education/education.component';
 import { DatabasesComponent } from './components/databases/databases.component';
 import { LanguagesComponent } from './components/languages/languages.component';
 import { AppRoutingModule } from './app.routes';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { AppRoutingModule } from './app.routes';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
