@@ -6,15 +6,11 @@ import { Owner } from '../models/Owner.interface';
   providedIn: 'root'
 })
 export class AboutMeService {
-  owner: Owner;
   constructor(private http: HttpClient) {
-    this.cargarAboutMe();
+    // this.cargarAboutMe();
    }
 
-  private cargarAboutMe() {
-    this.http.get('https://resume-bad4d.firebaseio.com/Owner.json').subscribe( (resp: Owner) => {
-      this.owner = resp;
-    } );
-
+  public cargarAboutMe() {
+    return this.http.get('https://resume-bad4d.firebaseio.com/Owner.json');
   }
 }

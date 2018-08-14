@@ -1,27 +1,27 @@
-<section class="resume-section p-3 p-lg-5 d-flex d-column">
+<section class="resume-section p-3 p-lg-5 d-flex d-column" *ngIf=(cargada)>
     <div class="my-auto">
-        <h1 class="mb-0">{{ _service.owner.Nombre }}
-            <span class="text-primary">{{ _service.owner.Apellido1 }}</span>
+        <h1 class="mb-0">{{ owner.Nombre }}
+            <span class="text-primary">{{ owner.Apellido1 }}</span>
         </h1>
-        <div class="subheading mb-5">{{ _service.owner.Direccion.Municipio }} · {{ _service.owner.Direccion.Estado }}, {{ _service.owner.Direccion.Pais }} · {{ _service.owner.Social.Telefono }} ·
-            <a href="mailto:name@email.com">{{ _service.owner.Social.Email }}</a>
+        <div class="subheading mb-5">{{ owner.Direccion.Municipio }} · {{ owner.Direccion.Estado }}, {{ owner.Direccion.Pais }} · {{ owner.Social.Telefono }} ·
+            <a href="mailto:name@email.com">{{ owner.Social.Email }}</a>
         </div>
-        <p class="mb-5">{{ _service.owner.AboutMe }}</p>
+        <p class="mb-5">{{ owner.AboutMe }}</p>
         <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
                 <a href="#">
                     <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-          </span>
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="#">
                     <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
                 </a>
             </li>
             <li class="list-inline-item">
