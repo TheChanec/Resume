@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DatabasesService } from '../../services/databases.service';
 
 @Component({
   selector: 'app-databases',
@@ -6,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class DatabasesComponent  {
 
-  constructor() { }
+  constructor(public _servicio: DatabasesService) { }
 
 }
